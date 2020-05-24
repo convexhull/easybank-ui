@@ -13,13 +13,6 @@ import image6 from '../../assets/images/image-restaurant.jpg';
 import image7 from '../../assets/images/image-plane.jpg';
 import image8 from '../../assets/images/image-currency.jpg';
 import image9 from '../../assets/images/logoFooter.svg';
-import image10 from '../../assets/images/icon-facebook.svg';
-import image11 from '../../assets/images/icon-youtube.svg';
-import image12 from '../../assets/images/icon-twitter.svg';
-import image13 from '../../assets/images/icon-pinterest.svg';
-import image14 from '../../assets/images/icon-instagram.svg';
-
-
 
 const Home = (props) => {
   const [state, changeState] = useState(false);
@@ -71,11 +64,11 @@ const Home = (props) => {
           </div>
           <div className={navMenuClasses}> 
             <ul>
-              <li>Home</li>
-              <li>About</li>
-              <li>Contact</li>
-              <li>Blog</li>
-              <li>Careers</li>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Careers</a></li>
             </ul>
           </div>
         </header>
@@ -221,11 +214,11 @@ const Home = (props) => {
                 <img src={image9} />
               </a>
               <div className="icon-container">
-                <img src={image10} />
-                <img src={image11} />
-                <img src={image12} />
-                <img src={image13} />
-                <img src={image14} />
+                <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+                <a href="#"><ion-icon name="logo-youtube"></ion-icon></a>
+                <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+                <a href="#"><ion-icon name="logo-pinterest"></ion-icon></a>
+                <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
               </div>
             </div>
 

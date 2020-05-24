@@ -27,6 +27,11 @@
         background-size: auto ;
     }
 
+
+    .intro-text {
+        flex-basis: 100%;
+    }
+
     .flexbox-container {
         flex-wrap: wrap;
     }
@@ -106,4 +111,22 @@
         text-align: center;
     }
     
+
+    .icon-container {
+        margin-top: 30px;
+    }
+
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .article-card {
+        flex-basis: 100%;
+        margin-bottom: 25px;
+    }
+
+
+    .article-card p {
+        margin-bottom: 50px;
+    }
 }

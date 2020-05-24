@@ -77,6 +77,10 @@ nav ul li {
     padding-right:20px;
 }
 
+nav ul a {
+    padding-bottom: 30px;
+}
+
 nav ul a:link,
 nav ul a:visited  {
     text-decoration: none;
@@ -88,7 +92,7 @@ nav ul a:hover,
 nav ul a:active  {
     text-decoration: none;
     color: #000;
-    border-bottom: 2px solid black;
+    border-bottom: 5px solid hsl(192, 70%, 51%);;
 }
 
 
@@ -121,12 +125,23 @@ nav ul a:active  {
 .nav-menu-show {
     display: flex;
     flex-direction: column;
-    background-color: silver;
+    background-color: hsl(0, 0%, 98%);
     position: absolute;
     right: 5px;
     top: 80px;
     margin: 0 auto;
-    width: 100%;
+    width: 80%;
+}
+
+.nav-menu ul{
+    list-style: none;
+}
+
+
+
+.nav-menu ul li a {
+    text-decoration: none;
+    color: hsl(233, 26%, 24%);
 }
 
 
@@ -136,11 +151,15 @@ nav ul a:active  {
 
 
 
+
+
 /*---------------INTRO---------------------*/
 
 
 
 .intro {
+    display: flex;
+    flex-wrap: wrap;
     margin-top: 10vh;
     height: 100vh;
     background-image: url('../../assets/images/bg-intro-desktop.svg');
@@ -296,7 +315,13 @@ address {
 
 .article-card h4 {
     margin-bottom: 10px;
+    transition: color 0.2s;
 }
+
+.article-card h4:hover {
+    color: hsl(192, 70%, 51%);
+}
+
 
 
 
@@ -332,10 +357,16 @@ footer a:visited {
     margin-top: 50px;
 }
 
-.icon-container > img {
+.icon-container > a > ion-icon {
     margin-right: 8px;
+    cursor: pointer;
+    color: white;
+    font-size: 20px;
 }
 
+.icon-container > a > ion-icon:hover {
+   color: hsl(192, 70%, 51%);
+}
 
 
 
@@ -345,6 +376,15 @@ footer a:visited {
     flex-basis: 40%;
 }
 
+.internal-links > div > a:visited,
+.internal-links > div > a:link {
+    transition: color 0.2s;
+}
+
+.internal-links > div > a:hover,
+.internal-links > div > a:active {
+    color: hsl(192, 70%, 51%);
+}
 
 
 .copyright-info {
